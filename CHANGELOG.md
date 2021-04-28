@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- test commit [\#2](https://github.com/rndmh3ro/ansible-collection-hardening/pull/2) ([rndmh3ro](https://github.com/rndmh3ro))
 - test release workflow with labels [\#1](https://github.com/rndmh3ro/ansible-collection-hardening/pull/1) ([rndmh3ro](https://github.com/rndmh3ro))
 
 ## [7.6.0](https://github.com/rndmh3ro/ansible-collection-hardening/tree/7.6.0) (2021-04-27)
