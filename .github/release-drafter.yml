@@ -60,3 +60,6 @@ categories:
   - title: "Deprecated:"
     labels:
       - "deprecated"
+
+template: |
+  $CHANGES
