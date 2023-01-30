@@ -27,23 +27,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: push changelog
-        uses: github-actions-x/commit@v2.9
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          push-branch: 'master'
-          commit-message: 'update changelog'
-          force-add: 'true'
-          files: CHANGELOG.md
-          name: dev-sec CI
-          email: hello@dev-sec.io
-
-      - name: Read CHANGELOG.md
-        id: package
-        uses: juliangruber/read-file-action@v1
-        with:
-          path: ./CHANGELOGRELEASE.md
-
       - name: Delete old drafts
         uses: hugo19941994/delete-draft-releases@v1.0.0
         env:
