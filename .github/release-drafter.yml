@@ -1,0 +1,62 @@
+---
+autolabeler:
+  - label: "mysql_hardening"
+    files:
+      - "roles/mysql_hardening/**"
+      - "molecule/mysql_hardening/**"
+      - ".github/workflows/mysql_hardening.yml"
+
+  - label: "os_hardening"
+    files:
+      - "roles/os_hardening*/**"
+      - "molecule/os_hardening*/**"
+      - ".github/workflows*/os_hardening.yml"
+
+  - label: "ssh_hardening"
+    files:
+      - "roles/ssh_hardening/**"
+      - "molecule/ssh_hardening/**"
+      - "molecule/ssh_hardening_custom_tests/**"
+      - ".github/workflows/ssh_hardening.yml"
+      - ".github/workflows/ssh_hardening_custom_tests.yml"
+
+  - label: "nginx_hardening"
+    files:
+      - "roles/nginx_hardening/**"
+      - "molecule/nginx_hardening/**"
+      - ".github/workflows/nginx_hardening.yml"
+
+version-resolver:
+  major:
+    labels:
+      - "major"
+      - "breaking"
+  minor:
+    labels:
+      - "minor"
+      - "enhancement"
+  patch:
+    labels:
+      - "patch"
+      - "bug"
+  default: patch
+
+categories:
+  - title: "Breaking Changes:"
+    labels:
+      - "breaking"
+      - "major"
+  - title: "Implemented Enhancements:"
+    labels:
+      - "feature"
+      - "minor"
+      - "enhancement"
+  - title: "Fixed Bugs:"
+    labels:
+      - "fix"
+      - "bugfix"
+      - "patch"
+      - "bug"
+  - title: "Deprecated:"
+    labels:
+      - "deprecated"
